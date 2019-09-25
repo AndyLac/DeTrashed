@@ -7,8 +7,8 @@ const NavBar = () => (
         <ul className="container">
             <li className="logo-container">
                 <ul className="logo-box">
-                    <li className="logo-picture">
-                        <h1 className="logo-placeholder">Test</h1>
+                    <li className="logo">
+                        <h1 className="logo-placeholder">DeTrashed</h1>
                     </li>
                 </ul>
             </li>
