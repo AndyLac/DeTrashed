@@ -8,39 +8,42 @@ class Community extends React.Component {
         super(props)
 
         this.state = {
-            tweets: null
+            posts: null
         }
     }
 
     componentDidMount() {
-        fetch("https://api.twitter.com/1.1/search/tweets.json?q=%23trashtag&result_type=popular", {mode: 'cors'})
-            .then(response => response.json())
-            .then(data => {
+        //Testing React
+        // let uri = 'https://api.twitter.com/1.1/search/tweets.json?q=%23trashtag&src=typed_query&f=image'
 
-                console.log(data)
-                this.setState({
-                    tweets: data
-                })
+        //https://www.reddit.com/r/DeTrashed/top/?sort=top&t=month
 
-            })
-            .catch(
-                this.setState({
-                    tweets: []
+        let uri = 'https://www.reddit.com/r/detrashed.json'
+        if(uri){
+            fetch(uri)
+                .then(function(data){
+                    return data.json()
                 })
-        )
+                .then(function(data){
+                    console.log(data)
+                })
+                .catch(function(error){ console.log(error) }) }
     }
 
     render() {
         return (
             <div className="container">
-                <section className="community-header">
+                <section className="community-container">
+                    <ul className="community-text">
+                        <li className="community-header">
+                            <h1>Community</h1>
+                        </li>
+                        <li className="community-msg">
+                            <h3>Come see everyone's work!</h3>
+                        </li>
+                    </ul>
                     <ul>
-                        <li>
-                            Community
-                        </li>
-                        <li>
-                            <h5>Come see everyone's work!</h5>
-                        </li>
+
                     </ul>
                 </section>
             </div>

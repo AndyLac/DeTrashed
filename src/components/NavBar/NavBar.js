@@ -17,9 +17,9 @@ const NavBar = () => (
                     <li className="nav-item">
                         Community
                     </li>
-                    <li className="nav-item">
-                        Donation
-                    </li>
+                    {/*<li className="nav-item">*/}
+                        {/*Donation*/}
+                    {/*</li>*/}
                     <li className="nav-item">
                         How to Start
                     </li>
