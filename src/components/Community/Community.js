@@ -1,5 +1,7 @@
 
 import React from 'react'
+import  { getRequest } from '../../utils/request.js'
+
 import './style.sass'
 
 class Community extends React.Component {
@@ -18,16 +20,10 @@ class Community extends React.Component {
 
         //https://www.reddit.com/r/DeTrashed/top/?sort=top&t=month
 
-        let uri = 'https://www.reddit.com/r/detrashed.json'
-        if(uri){
-            fetch(uri)
-                .then(function(data){
-                    return data.json()
-                })
-                .then(function(data){
-                    console.log(data)
-                })
-                .catch(function(error){ console.log(error) }) }
+        let url = 'https://www.reddit.com/r/detrashed.json'
+
+        getRequest(url)
+
     }
 
     render() {
