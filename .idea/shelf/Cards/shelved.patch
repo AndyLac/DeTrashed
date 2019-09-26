@@ -1,0 +1,52 @@
+Index: src/components/Cards/style.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Cards/style.sass	(date 1569441979000)
++++ src/components/Cards/style.sass	(date 1569441979000)
+@@ -0,0 +1,0 @@
+Index: src/components/Cards/Cards.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Cards/Cards.js	(date 1569442074000)
++++ src/components/Cards/Cards.js	(date 1569442074000)
+@@ -0,0 +1,9 @@
++
++import React from 'react'
++import 'style.sass'
++
++const Cards = (posts) => {
++
++}
++
++export default Cards
+\ No newline at end of file
+Index: src/components/Cards/Card/style.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Cards/Card/style.sass	(date 1569441800000)
++++ src/components/Cards/Card/style.sass	(date 1569441800000)
+@@ -0,0 +1,0 @@
+Index: src/components/Cards/Card/Card.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/Cards/Card/Card.js	(date 1569442074000)
++++ src/components/Cards/Card/Card.js	(date 1569442074000)
+@@ -0,0 +1,9 @@
++
++import React from 'react'
++import './style.sass'
++
++const Card = (post) => {
++
++}
++
++export default Card
+\ No newline at end of file
