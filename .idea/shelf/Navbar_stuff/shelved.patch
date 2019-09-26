@@ -1,0 +1,179 @@
+Index: src/reset.scss
+===================================================================
+--- src/reset.scss	(revision daa27774d7116fc793ce98808c7cf0c554afa76c)
++++ src/reset.sass	(date 1569272798000)
+@@ -1,40 +1,39 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+-*/
+ 
+-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+-  margin: 0;
+-  padding: 0;
+-  border: 0;
+-  font-size: 100%;
+-  font: inherit;
+-  vertical-align: baseline; }
++html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
++  margin: 0
++  padding: 0
++  border: 0
++  font-size: 100%
++  font: inherit
++  vertical-align: baseline 
+ 
+ /* HTML5 display-role reset for older browsers */
+ 
+-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+-  display: block; }
++article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
++  display: block 
+ 
+-body {
+-  line-height: 1; }
++body 
++  line-height: 1 
+ 
+-ol, ul {
+-  list-style: none; }
++ol, ul 
++  list-style: none 
+ 
+-blockquote, q {
+-  quotes: none; }
++blockquote, q 
++  quotes: none 
+ 
+-blockquote {
+-  &:before, &:after {
+-    content: '';
+-    content: none; } }
++blockquote 
++  &:before, &:after 
++    content: ''
++    content: none  
+ 
+-q {
+-  &:before, &:after {
+-    content: '';
+-    content: none; } }
++q 
++  &:before, &:after 
++    content: ''
++    content: none  
+ 
+-table {
+-  border-collapse: collapse;
+-  border-spacing: 0; }
++table 
++  border-collapse: collapse
++  border-spacing: 0 
+Index: src/App.scss
+===================================================================
+--- src/App.scss	(revision daa27774d7116fc793ce98808c7cf0c554afa76c)
++++ src/App.sass	(date 1569272798000)
+@@ -1,24 +1,22 @@
+-@import './reset.scss';
++@import 'reset'
++
++.App 
++  text-align: center
+ 
+-.App {
+-  text-align: center;
+-}
++.App-logo 
++  height: 40vmin
+ 
+-.App-logo {
+-  height: 40vmin;
+-}
++.App-header 
++  background-color: #282c34
++  min-height: 100vh
++  display: flex
++  flex-direction: column
++  align-items: center
++  justify-content: center
++  font-size: calc(10px + 2vmin)
++  color: white
+ 
+-.App-header {
+-  background-color: #282c34;
+-  min-height: 100vh;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: calc(10px + 2vmin);
+-  color: white;
+-}
+ 
+-.App-link {
+-  color: #09d3ac;
+-}
++.App-link 
++  color: #09d3ac
++
+Index: src/components/NavBar/NavBar.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/NavBar/NavBar.js	(date 1569284104000)
++++ src/components/NavBar/NavBar.js	(date 1569284104000)
+@@ -0,0 +1,14 @@
++
++import React from 'react'
++import 'style.sass'
++
++const NavBar = () => {
++
++}
++
++const NavButton = (tag) => {
++
++}
++
++export default NavBar
++
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport logo from './logo.svg';\nimport './App.scss';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(revision daa27774d7116fc793ce98808c7cf0c554afa76c)
++++ src/App.js	(date 1569272798000)
+@@ -1,6 +1,6 @@
+ import React from 'react';
+ import logo from './logo.svg';
+-import './App.scss';
++import './App.sass';
+ 
+ function App() {
+   return (
+Index: src/components/NavBar/button_text.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/NavBar/button_text.js	(date 1569361026000)
++++ src/components/NavBar/button_text.js	(date 1569361026000)
+@@ -0,0 +1,5 @@
++
++
++export default button_text = {
++
++}
+\ No newline at end of file
+Index: src/components/NavBar/style.sass
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/NavBar/style.sass	(date 1569272826000)
++++ src/components/NavBar/style.sass	(date 1569272826000)
+@@ -0,0 +1,0 @@
