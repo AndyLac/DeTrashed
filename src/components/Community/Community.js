@@ -1,6 +1,6 @@
 
 import React from 'react'
-import  { getRequest } from '../../utils/request.js'
+import Loader from 'react-loader-spinner'
 
 import './style.sass'
 
@@ -22,11 +22,25 @@ class Community extends React.Component {
 
         let url = 'https://www.reddit.com/r/detrashed.json'
 
-        getRequest(url)
-
+        const posts = fetch(url, {method: 'GET'})
+            .then(res => res.json())
+            .then(data => {
+                this.setState({
+                    posts: data
+                }, function() {
+                    console.log(this.state.posts)
+                })
+            })
+            .catch(error => {
+                this.setState({
+                    posts: {}
+                })
+                console.error(error)
+            })
     }
 
     render() {
+
         return (
             <div className="container">
                 <section className="community-container">
@@ -39,7 +53,17 @@ class Community extends React.Component {
                         </li>
                     </ul>
                     <ul>
-
+                        {this.state.posts == null ?
+                            <Loader
+                                type="TailSpin"
+                                color="dodgerblue"
+                                height={100}
+                                width={50}
+                            />  :
+                            <div>
+                                Placeholder
+                            </div>
+                        }
                     </ul>
                 </section>
             </div>
