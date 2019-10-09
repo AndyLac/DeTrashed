@@ -5,11 +5,17 @@
   background-color: white
   z-index: 1
 
+  position: fixed
+  top: 0
+
   & > .container
     display: flex
     flex-flow: row nowrap
     justify-content: space-between
     align-items: center
+
+    box-shadow: 0 3px 5px -5px #888888
+
 
     & > .logo-container, .nav-item-container
       width: 50%
@@ -19,7 +25,13 @@
       flex-flow: row nowrap
       justify-content: flex-start
 
+      & > .logo-box
+        & > .logo
+          & > .logo-placeholder
+            color: dodgerblue
+
     & > .nav-item-container
+
       & > .button-group
         width: 100%
         display: flex
