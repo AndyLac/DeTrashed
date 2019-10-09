@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Loader from 'react-loader-spinner'
-
+import Cards from '../Cards/Cards'
 import './style.sass'
 
 class Community extends React.Component {
@@ -10,30 +10,24 @@ class Community extends React.Component {
         super(props)
 
         this.state = {
-            posts: null
+            posts: []
         }
     }
 
     componentDidMount() {
-        //Testing React
-        // let uri = 'https://api.twitter.com/1.1/search/tweets.json?q=%23trashtag&src=typed_query&f=image'
+        let url = 'https://www.reddit.com/r/DeTrashed/top.json?sort=top&t=week'
 
-        //https://www.reddit.com/r/DeTrashed/top/?sort=top&t=month
-
-        let url = 'https://www.reddit.com/r/detrashed.json'
-
-        const posts = fetch(url, {method: 'GET'})
+        fetch(url, {method: 'GET'})
             .then(res => res.json())
-            .then(data => {
+            .then(json => {
+
                 this.setState({
-                    posts: data
-                }, function() {
-                    console.log(this.state.posts)
+                    posts: json.data.children
                 })
             })
             .catch(error => {
                 this.setState({
-                    posts: {}
+                    posts: []
                 })
                 console.error(error)
             })
@@ -50,6 +44,7 @@ class Community extends React.Component {
                         </li>
                         <li className="community-msg">
                             <h3>Come see everyone's work!</h3>
+                            <h5>Courtesy of <a href="https://www.reddit.com/r/detrashed">Reddit's Detrashed Community</a></h5>
                         </li>
                     </ul>
                     <ul>
@@ -60,9 +55,7 @@ class Community extends React.Component {
                                 height={100}
                                 width={50}
                             />  :
-                            <div>
-                                Placeholder
-                            </div>
+                            <Cards entries={this.state.posts}/>
                         }
                     </ul>
                 </section>

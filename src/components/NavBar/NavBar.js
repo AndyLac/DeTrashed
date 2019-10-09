@@ -24,7 +24,7 @@ const NavBar = () => (
                         How to Start
                     </li>
                     <li className="nav-item">
-                        Facilities
+                        Disposal
                     </li>
                 </ul>
             </li>
