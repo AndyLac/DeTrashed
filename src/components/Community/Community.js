@@ -2,6 +2,7 @@
 import React from 'react'
 import Loader from 'react-loader-spinner'
 import Cards from '../Cards/Cards'
+import SectionHeader from '../SectionHeader/SectionHeader'
 import './style.sass'
 
 class Community extends React.Component {
@@ -36,12 +37,13 @@ class Community extends React.Component {
     render() {
 
         return (
-            <div className="container">
-                <section className="community-container">
+            <div className="community-container">
+                <section className="container">
                     <ul className="community-text">
-                        <li className="community-header">
-                            <h1>Community</h1>
-                        </li>
+                        <SectionHeader
+                            title={"Community"}
+                            color={"black"}
+                        />
                         <li className="community-msg">
                             <h3>Come see everyone's work!</h3>
                             <h5>Courtesy of <a href="https://www.reddit.com/r/detrashed">Reddit's Detrashed Community</a></h5>
