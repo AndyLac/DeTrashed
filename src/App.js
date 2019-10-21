@@ -4,7 +4,9 @@ import './App.sass';
 import Navbar from './components/NavBar/NavBar'
 import Mural from './components/Mural/Mural'
 import Community from './components/Community/Community'
-import Start from "./components/Start/Start";
+import Start from './components/Start/Start'
+
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Mural/>
       <Community/>
       <Start />
+      <Footer/>
     </div>
   );
 }
