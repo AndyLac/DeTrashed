@@ -7,7 +7,6 @@ export default {
             'needles': 'Needles',
             'paper': 'Paper',
             'trash': 'Trash',
-
         }
     }
 }

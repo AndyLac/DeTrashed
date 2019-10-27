@@ -1,0 +1,26 @@
+@import '../../../variables'
+
+.regional-container
+  border-right: solid 1px lightgray
+
+  & > .regional-form
+    display: flex
+    flex-flow: row nowrap
+
+    & > ul
+      & > .address-input
+        & > input
+          padding: 5px
+
+          & > input:focus
+            border-color: $theme
+
+
+      & > .address-submit
+        & > input
+          padding: 5px
+          color: $theme
+
+        & > input:hover
+          border-color: $theme
+

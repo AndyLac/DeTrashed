@@ -9,12 +9,6 @@ const DisposalLabel = ({label}) => {
     return (
         <li className="disposal-label-container">
             <ul className="label-content">
-                <input
-                    type="radio"
-                    id={label}
-                    value={label}
-                    className="radio-button"
-                />
                 <label className="disposal-label">
                     {label}
                 </label>
@@ -24,7 +18,7 @@ const DisposalLabel = ({label}) => {
 }
 
 DisposalLabel.propTypes = {
-    label: PropTypes.string.required
+    label: PropTypes.string
 }
 
 export default DisposalLabel

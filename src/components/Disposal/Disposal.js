@@ -3,9 +3,13 @@ import React from 'react'
 import SectionHeader from "../SectionHeader/SectionHeader";
 
 import getGeolocationPromise from './helper'
-import fields from './fields'
 
 import './style.sass'
+import GoogleMapWrapper from "../GoogleMaps/GoogleMapWrapper";
+import DisposalLabel from "./DisposalGroup/DisposalLabel/DisposalLabel";
+import AddressContainer from "./AddressContainer/AddressContainer";
+import GeolocationContainer from "./GeolocationContainer/GeolocationContainer";
+import DisposalGroup from "./DisposalGroup/DisposalGroup";
 
 class Disposal extends React.Component {
 
@@ -15,8 +19,8 @@ class Disposal extends React.Component {
         this.state = {
             disposal: 'disposal',
 
-            latitude: null,
-            longitude: null,
+            lat: null,
+            lng: null,
 
             street: null,
             city: null,
@@ -29,17 +33,28 @@ class Disposal extends React.Component {
         this.findDisposal = this.findDisposal.bind(this)
     }
 
-    getGeolocation() {
-        let geolocation = getGeolocationPromise()
+    getGeolocation(event) {
+        event.preventDefault()
+        let promise = getGeolocationPromise()
 
         //Store geolocation data into state
-        geolocation.then((position) => {
+        promise.then((position) => {
             this.setState({
                 ...this.state,
-                latitude: position.coords.latitude,
-                longitude: position.coords.longitude
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
             })
+
+        }).then(() => {
+            let api = process.env.REACT_APP_GOOGLE_MAPS_SECRET
+
+            let url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + this.state.lat + ',' + this.state.lng + '&radius=1500&keyword=metal-disposal&key=' + api
+
+            console.log(url)
         })
+
+
+
     }
 
     setDisposal(event, disposal) {
@@ -52,7 +67,7 @@ class Disposal extends React.Component {
         })
     }
 
-    findDisposal(event) {
+    setAddress(event) {
         event.preventDefault()
 
         //Google API here, use either geolocation or location
@@ -66,29 +81,34 @@ class Disposal extends React.Component {
         })
     }
 
+    findDisposal(event) {
+
+    }
+
+
     render() {
 
 
         return(
             <div className="disposal-container">
                 <section className="container">
-                    <SectionHeader
-                        title={"Disposal Center"}
-                        color={"black"}
-                    />
-                    <ul className="disposal-selection">
-                        Test
+                    <ul>
+                        <SectionHeader
+                            title={"Disposal Center"}
+                            color={"black"}
+                        />
+                        <li>
+                            <h4>Find a disposal center near you!</h4>
+                        </li>
                     </ul>
+                   <DisposalGroup />
                     <ul className="location-container">
-                        <li className="regional">
-                            Test
-                        </li>
-                        <li className="geolocation">
-                            Test
-                        </li>
+                        <AddressContainer />
+                        <GeolocationContainer />
+
                     </ul>
                     <ul className="google-maps">
-                        Test
+                       Test
                     </ul>
                 </section>
             </div>
