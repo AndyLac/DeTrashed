@@ -8,28 +8,37 @@ import DisposalLabel from "./DisposalLabel/DisposalLabel";
 
 import './style.sass'
 
-const DisposalGroup = ({onClick}) => {
+const DisposalGroup = () => {
 
     return (
-        <ul className='disposal-container container'>
-            {Object.keys(fields).map(key => {
+        <ul className='disposal-labels-container container'>
+            <div className='disposal-subheader'>
+                <h4>1. Select any types of disposal</h4>
+            </div>
+            <div className="disposal-items">
+            {Object.entries(fields.options).map(entry => {
 
+                console.log(entry)
 
                 return(
                     <DisposalLabel
-                        key={key}
-                        label={fields[key]}
+                        key={entry[0]}
+                        label={entry[1]}
                     />
                 )
             })}
+            </div>
         </ul>
     )
+}
+
+const test = ({onClick}) => {
 
 }
 
 
 DisposalGroup.propTypes = {
-    onClick: PropTypes.func
+    // onClick: PropTypes.func
 }
 
 export default DisposalGroup
