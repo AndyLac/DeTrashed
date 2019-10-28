@@ -10,7 +10,7 @@ import './style.sass'
 
 const Start = () => {
     return (
-        <section className="start-container">
+        <section className="start-container" id='start'>
             <ul className="section-header">
                 <SectionHeader
                     title={"How to Start"}

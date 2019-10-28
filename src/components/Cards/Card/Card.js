@@ -17,7 +17,7 @@ const Card = ({img, user, caption, link}) => {
                             <h5><a href={"https://www.reddit.com" + link}>{caption}</a></h5>
                         </li>
                         <li className="user">
-                            <h5>Author: <a href={"https://www.reddit.com/u/" + user}>/u/{user}</a></h5>
+                            <h5>Original Creator: <a href={"https://www.reddit.com/u/" + user}>/u/{user}</a></h5>
                         </li>
                     </ul>
                 </li>

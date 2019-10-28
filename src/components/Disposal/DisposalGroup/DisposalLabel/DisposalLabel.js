@@ -14,7 +14,7 @@ const DisposalLabel = ({value, label, onClick}) => {
                 const active = e.currentTarget.parentNode.getElementsByClassName('active')[0]
 
                 if(active) {
-                    current.className = current.className + ' active'
+                    current.className = current.className.concat(' active')
                     active.className = active.className.replace(' active', '')
                 } else {
                     current.className = current.className + ' active'

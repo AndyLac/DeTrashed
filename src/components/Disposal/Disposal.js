@@ -94,7 +94,7 @@ class Disposal extends React.Component {
 
     render() {
         return(
-            <div className="disposal-container">
+            <div className="disposal-container" id='disposal'>
                 <section className="container">
                     <ul>
                         <SectionHeader

@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <Mural />
-      <Community id='community'/>
-      <Start id='start'/>
-      <Disposal id='disposal'/>
+      <Community />
+      <Start />
+      <Disposal />
       <Footer/>
     </div>
   );
