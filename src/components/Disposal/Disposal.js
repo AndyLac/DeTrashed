@@ -4,12 +4,14 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 
 import getGeolocationPromise from './helper'
 
-import './style.sass'
-import GoogleMapWrapper from "../GoogleMaps/GoogleMapWrapper";
-import DisposalLabel from "./DisposalGroup/DisposalLabel/DisposalLabel";
+import GoogleMapProvider from "../GoogleMaps/GoogleMapProvider";
 import AddressContainer from "./AddressContainer/AddressContainer";
 import GeolocationContainer from "./GeolocationContainer/GeolocationContainer";
 import DisposalGroup from "./DisposalGroup/DisposalGroup";
+
+import fields from './DisposalGroup/fields'
+
+import './style.sass'
 
 class Disposal extends React.Component {
 
@@ -17,24 +19,23 @@ class Disposal extends React.Component {
         super(props)
 
         this.state = {
-            disposal: 'disposal',
+            disposal: null,
 
             lat: null,
             lng: null,
 
-            street: null,
-            city: null,
-            state: null,
-            country: null
+            address: null,
+
+            places: []
         }
+
 
         this.getGeolocation = this.getGeolocation.bind(this)
         this.setDisposal = this.setDisposal.bind(this)
-        this.findDisposal = this.findDisposal.bind(this)
+        this.setAddress = this.setAddress.bind(this)
     }
 
-    getGeolocation(event) {
-        event.preventDefault()
+    getGeolocation() {
         let promise = getGeolocationPromise()
 
         //Store geolocation data into state
@@ -48,22 +49,29 @@ class Disposal extends React.Component {
         }).then(() => {
             let api = process.env.REACT_APP_GOOGLE_MAPS_SECRET
 
-            let url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + this.state.lat + ',' + this.state.lng + '&radius=1500&keyword=metal-disposal&key=' + api
+            //TODO: Implement clean fix... so far it overrides CORS
+            const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-            console.log(url)
+            let url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + this.state.lat + ',' + this.state.lng + '&radius=1500&type=needle&keyword=disposal&key=' + api
+
+            fetch(proxyurl + url)
+                .then(response => response.json())
+                .then(data => {
+                    this.setState({
+                        ...this.state,
+                        places: data.results
+                    })
+                }).catch(error => {
+                    console.log(error)
+            })
         })
-
-
-
     }
 
-    setDisposal(event, disposal) {
+    setDisposal(value) {
         //Set type of disposal
-        event.preventDefault()
-
         this.setState({
             ...this.state,
-            disposal: disposal
+            disposal: value
         })
     }
 
@@ -74,21 +82,11 @@ class Disposal extends React.Component {
         this.setState({
             ...this.state,
 
-            street: event.value.street,
-            city: event.value.city,
-            state: event.value.state,
-            country: event.value.country
+            address: event.value.address
         })
     }
 
-    findDisposal(event) {
-
-    }
-
-
     render() {
-
-
         return(
             <div className="disposal-container">
                 <section className="container">
@@ -101,17 +99,25 @@ class Disposal extends React.Component {
                             <h4>Find a disposal center near you!</h4>
                         </li>
                     </ul>
-                   <DisposalGroup />
+                   <DisposalGroup
+                        setDisposal={this.setDisposal}
+                   />
                     <div>
                         <h4>2. Use one of the two options below</h4>
                     </div>
                     <ul className="location-container">
 
                         <AddressContainer />
-                        <GeolocationContainer />
+                        <GeolocationContainer
+                            getGeolocation={this.getGeolocation}
+                        />
                     </ul>
                     <ul className="google-maps">
-                       Test
+                       <GoogleMapProvider
+                            lat={this.state.lat}
+                            lng={this.state.lng}
+                            places={this.state.places}
+                       />
                     </ul>
                 </section>
             </div>

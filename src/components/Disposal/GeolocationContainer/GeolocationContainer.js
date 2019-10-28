@@ -24,4 +24,8 @@ const GeolocationContainer = ({getGeolocation}) => {
     )
 }
 
+GeolocationContainer.propTypes = {
+    getGeolocation: PropTypes.func.isRequired
+}
+
 export default GeolocationContainer
