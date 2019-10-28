@@ -1,0 +1,41 @@
+@import '../../../../variables'
+
+
+.disposal-label-container
+  padding: 10px
+  background-color: white
+
+  border: 1px $theme solid
+  border-radius: 5px
+
+  width: 200px
+
+
+  & > .label-content
+    display: flex
+    flex-flow: row nowrap
+
+    justify-content: center
+
+    & > .disposal-label
+      font-size: 1rem
+      color: $theme
+      cursor: pointer
+      text-align: center
+  &.active
+    background-color: $theme
+
+    & > .label-content
+      & > .disposal-label
+        color: white
+
+
+.disposal-label-container:hover
+  background-color: $theme
+  cursor: pointer
+
+  & > .label-content
+    & > .disposal-label
+      color: white
+
+//Need a hover, so it pops upwards/forwards

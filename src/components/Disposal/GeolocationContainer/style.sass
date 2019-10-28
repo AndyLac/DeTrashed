@@ -1,0 +1,32 @@
+@import '../../../variables'
+
+.geolocation-container
+
+  & > .geolocation-content
+
+    padding: 20px
+
+    & > ul
+      display: flex
+      flex-flow: row nowrap
+
+      justify-content: center
+
+      & > .geolocation-label
+        border: 1px solid $theme
+        border-radius: 5px
+
+        padding: 10px
+        background-color: white
+        cursor: pointer
+
+        & > h5
+          font-size: 1rem
+          color: $theme
+          text-align: center
+
+      & > .geolocation-label:hover
+        background-color: $theme
+
+        & > h5
+          color: white

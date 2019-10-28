@@ -1,0 +1,75 @@
+@import '../../../variables'
+
+.regional-container
+  border-right: solid 1px lightgray
+
+  & > .regional-subheader
+    padding: 10px 0
+
+  & > .regional-form-container
+    display: flex
+    flex-flow: row nowrap
+
+    & > .regional-form
+      width: 100%
+
+      & > .address-container
+        width: 100%
+
+        & > ul
+          padding: 10px 0
+
+        & > .address-input
+          display: flex
+          flex-flow: row nowrap
+
+          justify-content: start
+
+          & > li
+            width: 75%
+            & > input
+              width: 100%
+              padding: 7px 10px
+              border: none
+              border-bottom: 1px solid $theme
+
+              font-size: 12px
+
+        & > .address-submit
+          width: 100%
+
+          display: flex
+          flex-flow: row nowrap
+
+          justify-content: end
+
+          & > li
+            & > input
+              background-color: white
+              color: $theme
+              border-radius: 5px
+              border: 1px solid $theme
+
+              padding: 10px
+
+              cursor: pointer
+
+            & > input:hover
+              background-color: $theme
+              color: white
+
+
+
+    //& > ul
+    //  & > .address-input
+    //
+    //
+    //
+    //  & > .address-submit
+    //    & > input
+    //      padding: 5px
+    //      color: $theme
+    //
+    //    & > input:hover
+    //      border-color: $theme
+
