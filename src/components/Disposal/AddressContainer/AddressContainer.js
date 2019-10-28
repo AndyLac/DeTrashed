@@ -8,18 +8,28 @@ import './style.sass'
 
 const AddressContainer = () => {
     return (
-        <li className="regional-container container">
-            <form className="regional-form">
-                <ul>
-                    <li className='address-input'>
-                        <input {...fields.regional.props}/>
+        <ul className='regional-container container'>
+            <li className='regional-subheader'>
+                <h4>Input your address below and hit submit.</h4>
+            </li>
+            <li className='regional-form-container'>
+                <form className="regional-form">
+                    <li className='address-container'>
+                        <ul className='address-input'>
+                            <li>
+                                <input {...fields.regional.props}/>
+                            </li>
+
+                        </ul>
+                        <ul className='address-submit'>
+                            <li>
+                                <input {...fields.submit.props} />
+                            </li>
+                        </ul>
                     </li>
-                    <li className='address-submit'>
-                        <input {...fields.submit.props} />
-                    </li>
-                </ul>
-            </form>
-        </li>
+                </form>
+            </li>
+        </ul>
     )
 }
 

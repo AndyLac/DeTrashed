@@ -105,7 +105,6 @@ class Disposal extends React.Component {
                     <ul className="location-container">
                         <AddressContainer />
                         <GeolocationContainer />
-
                     </ul>
                     <ul className="google-maps">
                        Test
