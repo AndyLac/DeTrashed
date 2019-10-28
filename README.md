@@ -30,7 +30,7 @@ yarn start
  Pressing ctrl + s while ```yarn start``` is running will cause the web application to refresh with all the new changes that you have made.
 
 ## Roadmap
-###Front-End
+### Front-End
 * Finding a more accurate API that can search for disposal facilities (ie. Syringe disposal centers, Metal collection, etc)
 * Implement a Marker component and InfoWindow component to enhance user experience by showing facility names and locations
 * Integrate Nginx to host the web application
@@ -38,7 +38,7 @@ yarn start
 * Integrate a Meta Header package to help with SEO purposes 
 
 
-###Back-End (Long-Term goals)
+### Back-End (Long-Term goals)
 * Use a back-end framework (Laravel, Java SpringBoot, etc) to eventually start implementing features (mainly features involving users, comments, posting images to build up a community)
 * Integrate a RDBMS like MariaDB or MySQL to store user data
 * Integrate Redis to use along with the RDBMS
