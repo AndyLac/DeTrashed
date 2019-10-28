@@ -25,8 +25,6 @@ const GoogleMapProvider = ({lat, lng, places}) => {
 
                {places.map(place => {
 
-                   console.log(place)
-
                    return(
                        <Marker
                         key={place.id}

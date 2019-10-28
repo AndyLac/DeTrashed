@@ -53,7 +53,8 @@ class Disposal extends React.Component {
             //TODO: Implement clean fix... so far it overrides CORS
             const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-            let url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + this.state.lat + ',' + this.state.lng + '&radius=1500&type=needle&key=' + api
+            //TODO: Find the correct API that can query disposal centers
+            let url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.lat},${this.state.lng}&radius=1500&keyword=${this.state.disposal}&key=${api}`
 
             fetch(proxyurl + url)
                 .then(response => response.json())
@@ -92,9 +93,6 @@ class Disposal extends React.Component {
     }
 
     render() {
-
-        console.log(this.state)
-
         return(
             <div className="disposal-container">
                 <section className="container">

@@ -1,7 +1,6 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import DisposalLabel from "../DisposalGroup/DisposalLabel/DisposalLabel";
 
 import './style.sass'
 
@@ -13,11 +12,12 @@ const GeolocationContainer = ({getGeolocation}) => {
                 <h4>Use your geolocation by clicking the button below</h4>
             </li>
             <li className='geolocation-content'>
-                <ul>
-                    <DisposalLabel
-                        label={"Geolocation"}
-                        onClick={getGeolocation}
-                    />
+                <ul className="label-content" onClick={e => {
+                    getGeolocation()
+                }}>
+                    <label className="geolocation-label">
+                        <h5>Get Geolocation</h5>
+                    </label>
                 </ul>
             </li>
         </ul>
