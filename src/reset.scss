@@ -11,6 +11,10 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
   font: inherit;
   vertical-align: baseline; }
 
+a {
+  text-decoration: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {

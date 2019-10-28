@@ -37,7 +37,7 @@ class Community extends React.Component {
     render() {
 
         return (
-            <div className="community-container">
+            <div className="community-container" id='community'>
                 <section className="container">
                     <ul className="community-text">
                         <SectionHeader
