@@ -10,7 +10,7 @@ const AddressContainer = () => {
     return (
         <ul className='regional-container container'>
             <li className='regional-subheader'>
-                <h4>Input your address below and hit submit.</h4>
+                <h4>Input your address below and hit submit</h4>
             </li>
             <li className='regional-form-container'>
                 <form className="regional-form">

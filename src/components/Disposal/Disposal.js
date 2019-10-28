@@ -102,7 +102,11 @@ class Disposal extends React.Component {
                         </li>
                     </ul>
                    <DisposalGroup />
+                    <div>
+                        <h4>2. Use one of the two options below</h4>
+                    </div>
                     <ul className="location-container">
+
                         <AddressContainer />
                         <GeolocationContainer />
                     </ul>
