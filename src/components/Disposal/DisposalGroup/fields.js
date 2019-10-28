@@ -2,7 +2,7 @@
 
 export default {
     options: {
-        'trash': 'Trash',
+        'garbage': 'Garbage',
         'metal': 'Metal',
         'needles': 'Needles',
         'paper': 'Paper',

@@ -1,5 +1,6 @@
 @import '../../../../variables'
 
+
 .disposal-label-container
   padding: 10px
   background-color: white
@@ -16,14 +17,18 @@
 
     justify-content: center
 
-
-    //radio button
-
     & > .disposal-label
       font-size: 1rem
       color: $theme
       cursor: pointer
       text-align: center
+  &.active
+    background-color: $theme
+
+    & > .label-content
+      & > .disposal-label
+        color: white
+
 
 .disposal-label-container:hover
   background-color: $theme

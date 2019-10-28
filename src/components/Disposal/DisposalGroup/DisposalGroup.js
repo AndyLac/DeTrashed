@@ -5,7 +5,6 @@ import fields from './fields'
 
 import DisposalLabel from "./DisposalLabel/DisposalLabel";
 
-
 import './style.sass'
 
 const DisposalGroup = ({setDisposal}) => {

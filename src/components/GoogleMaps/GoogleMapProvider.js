@@ -19,7 +19,7 @@ const GoogleMapProvider = ({lat, lng, places}) => {
            <GoogleMapReact
                 bootstrapURLKeys={{key: process.env.REACT_APP_GOOGLE_MAPS_SECRET}}
                 defaultZoom={13}
-                defaultCenter={{lat: lat, lng: lng}}
+                defaultCenter={{lat: 40.730610, lng: -73.935242}}
                 center={{lat: lat, lng: lng}}
            >
 
