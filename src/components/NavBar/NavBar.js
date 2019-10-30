@@ -3,6 +3,7 @@ import React from 'react'
 import fields from './fields'
 
 import './style.sass'
+import Hamburger from "./Hamburger/Hamburger";
 
 const NavBar = () => (
     <div className="nav-bar">
@@ -27,13 +28,17 @@ const NavBar = () => (
                                 element.scrollIntoView({
                                     behavior: 'smooth'
                                 })
+                                document.getElementById(entry[0]).scrollTop += 40
                             }}
+
+
                         >
                             {entry[1]}
                         </li>
                     ))}
-
-
+                </ul>
+                <ul className='hamburger-container'>
+                    <Hamburger/>
                 </ul>
             </li>
         </ul>

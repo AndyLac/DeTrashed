@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/Hamburger/Hamburger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/Hamburger/style.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/Card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/Cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Community/Community.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Community/Community.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Disposal/Disposal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/Disposal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/GeolocationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/GeolocationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/InfoPanel/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/InfoPanel/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/Start.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/Start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/fields.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Disposal/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +21,14 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Sass File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -51,6 +55,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/standard/eslintrc.json" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -89,7 +94,7 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="2547000" />
+      <workItem from="1572459997002" duration="4661000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
       <created>1572460326978</created>
@@ -105,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572461594213</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed some of the width issues in mobile view">
+      <created>1572462613434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572462613434</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixing up files while working on a Windows env" />
     <MESSAGE value="Adding in PWA support with iOS icons and installable to homescreen via manifest.json and index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding in PWA support with iOS icons and installable to homescreen via manifest.json and index.html" />
+    <MESSAGE value="Fixed some of the width issues in mobile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some of the width issues in mobile view" />
   </component>
 </project>
