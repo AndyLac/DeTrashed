@@ -3,6 +3,7 @@ import React from 'react'
 import fields from './fields'
 
 import './style.sass'
+import Hamburger from "./Hamburger/Hamburger";
 
 const NavBar = () => (
     <div className="nav-bar">
@@ -32,8 +33,9 @@ const NavBar = () => (
                             {entry[1]}
                         </li>
                     ))}
-
-
+                </ul>
+                <ul className='hamburger-container'>
+                    <Hamburger />
                 </ul>
             </li>
         </ul>

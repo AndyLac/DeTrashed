@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Cards.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Cards.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Navbar_stuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Navbar_stuff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Start/InfoPanel/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/InfoPanel/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Start/fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/fields.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,27 +18,60 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1SvzH7HdNlwBm9RvClizRZ41Ifr" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/standard/eslintrc.json" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/standard" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\PhpStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Repositories\DeTrashed\public" />
+      <recent name="D:\Repositories\DeTrashed\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -67,8 +99,100 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="299000" />
+      <workItem from="1572459997002" duration="16793000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
+      <created>1572460326978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572460326978</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding in PWA support with iOS icons and installable to homescreen via manifest.json and index.html">
+      <created>1572461594213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572461594213</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed some of the width issues in mobile view">
+      <created>1572462613434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572462613434</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated navbar responsive width">
+      <created>1572464719624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572464719624</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added in Hamburger icon">
+      <created>1572465286241</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572465286241</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed margins for the hamburger">
+      <created>1572465398506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572465398506</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created a sidenav, added in function for hamburger to set sidenav as active or inactive">
+      <created>1572466676109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572466676109</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated SideNav design">
+      <created>1572467828830</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572467828830</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added in SideNav to mobile view">
+      <created>1572468214200</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572468214200</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed Mural so that it scales with different mobile screens and fixed cards">
+      <created>1572471369228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572471369228</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed Use Geolocation button width">
+      <created>1572471500256</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572471500256</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added in an Error Label for Geolocation Container">
+      <created>1572472683181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572472683181</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Attempt to register service workers into the app">
+      <created>1572478029854</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572478029854</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,5 +210,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixing up files while working on a Windows env" />
+    <MESSAGE value="Adding in PWA support with iOS icons and installable to homescreen via manifest.json and index.html" />
+    <MESSAGE value="Fixed some of the width issues in mobile view" />
+    <MESSAGE value="Updated navbar responsive width" />
+    <MESSAGE value="Added in Hamburger icon" />
+    <MESSAGE value="fixed margins for the hamburger" />
+    <MESSAGE value="Created a sidenav, added in function for hamburger to set sidenav as active or inactive" />
+    <MESSAGE value="Updated SideNav design" />
+    <MESSAGE value="Added in SideNav to mobile view" />
+    <MESSAGE value="Fixed Mural so that it scales with different mobile screens and fixed cards" />
+    <MESSAGE value="Changed Use Geolocation button width" />
+    <MESSAGE value="Added in an Error Label for Geolocation Container" />
+    <MESSAGE value="Attempt to register service workers into the app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt to register service workers into the app" />
   </component>
 </project>

@@ -3,10 +3,8 @@ import React from 'react'
 import './style.sass'
 
 const Mural = () => (
-     <ul className="mural-container">
-            <li className="mural">
-
-            </li>
+     <ul className="mural-container container">
+            <li className="mural"/>
         </ul>
 )
 
