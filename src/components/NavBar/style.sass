@@ -62,9 +62,20 @@
           border-top: 1px solid $theme
           cursor: pointer
 
+      & > .hamburger-container
+        display: none
 @media only screen and (max-width: 645px)
   .nav-bar
     & > .container
       & > .nav-item-container
         & > .button-group
           display: none
+        & > .hamburger-container
+          width: 100%
+          height: 100%
+
+          display: flex
+          flex-flow: column
+          justify-content: center
+
+          cursor: pointer

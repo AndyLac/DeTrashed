@@ -30,15 +30,13 @@ const NavBar = () => (
                                 })
                                 document.getElementById(entry[0]).scrollTop += 40
                             }}
-
-
                         >
                             {entry[1]}
                         </li>
                     ))}
                 </ul>
                 <ul className='hamburger-container'>
-                    <Hamburger/>
+                    <Hamburger />
                 </ul>
             </li>
         </ul>
