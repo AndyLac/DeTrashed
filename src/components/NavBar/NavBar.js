@@ -28,7 +28,6 @@ const NavBar = () => (
                                 element.scrollIntoView({
                                     behavior: 'smooth'
                                 })
-                                document.getElementById(entry[0]).scrollTop += 40
                             }}
                         >
                             {entry[1]}

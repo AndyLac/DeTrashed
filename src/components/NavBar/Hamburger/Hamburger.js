@@ -5,7 +5,19 @@ import './style.sass'
 const Hamburger = () => {
 
     return (
-        <div className='hamburger'>
+        <div className='hamburger' onClick={e => {
+
+            let sidenav = document.getElementById('sidenav-container')
+
+            if(sidenav.className.includes('active')) {
+
+                sidenav.className = sidenav.className.replace(' active', '')
+                sidenav.style.width =  "0px"
+            } else {
+                sidenav.className = sidenav.className.concat(' active')
+                sidenav.style.width = "100%"
+            }
+        }}>
             <div className='bar-1'/>
             <div className='bar-2'/>
             <div className='bar-3'/>

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/SideNav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/style.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/Hamburger/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/Hamburger/Hamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +92,7 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="5353000" />
+      <workItem from="1572459997002" duration="6634000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
       <created>1572460326978</created>
@@ -125,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572465286241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed margins for the hamburger">
+      <created>1572465398506</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572465398506</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +161,7 @@
     <MESSAGE value="Fixed some of the width issues in mobile view" />
     <MESSAGE value="Updated navbar responsive width" />
     <MESSAGE value="Added in Hamburger icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in Hamburger icon" />
+    <MESSAGE value="fixed margins for the hamburger" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed margins for the hamburger" />
   </component>
 </project>

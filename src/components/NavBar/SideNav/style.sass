@@ -1,0 +1,39 @@
+@import '../../../variables'
+
+.sidenav-container
+  height: 100%
+  width: 0
+
+  right: 0
+  top: 0
+  bottom: 0
+
+  position: fixed
+  z-index: 2
+  overflow-x: hidden
+
+  padding-top: 60px
+
+  background-color: $theme
+
+  transition: 0.5s
+
+  & > .container
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-evenly
+
+    color: white
+
+    & > .close-btn-container
+
+      & > .close-btn
+        font-size: 36px
+        margin-right: 30px
+
+    & > .mobile-nav-item-container
+      color: white
+      font-size: 36px
+
+      & > .mobile-nav-item-container
+        padding: 15px
