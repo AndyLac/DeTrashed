@@ -8,6 +8,12 @@
       "type": "image/x-icon"
     },
     {
+      "src": "recycle150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+
+    {
       "src": "recycle192.png",
       "type": "image/png",
       "sizes": "192x192"

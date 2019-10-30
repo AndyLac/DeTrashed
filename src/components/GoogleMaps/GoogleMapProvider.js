@@ -14,6 +14,8 @@ const GoogleMapProvider = ({lat, lng, places}) => {
         lng = -73.935242
     }
 
+    console.log(process.env.REACT_APP_GOOGLE_MAPS_SECRET)
+
    return(
        <div style={{ height: '75vh', width: '100%' }}>
            <GoogleMapReact
