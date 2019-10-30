@@ -1,5 +1,4 @@
 
-import React from 'react'
 
 const toggleSideNav = () => {
     let sidenav = document.getElementsByClassName('sidenav-container')[0]
