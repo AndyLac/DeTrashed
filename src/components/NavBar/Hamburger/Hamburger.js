@@ -9,14 +9,16 @@ const Hamburger = () => {
 
             let sidenav = document.getElementById('sidenav-container')
 
-            if(sidenav.className.includes('active')) {
+            console.log(sidenav)
 
-                sidenav.className = sidenav.className.replace(' active', '')
-                sidenav.style.width =  "0px"
-            } else {
-                sidenav.className = sidenav.className.concat(' active')
-                sidenav.style.width = "100%"
-            }
+            // if(sidenav.className.includes('active')) {
+            //
+            //     sidenav.className = sidenav.className.replace(' active', '')
+            //     sidenav.style.width =  "0px"
+            // } else {
+            //     sidenav.className = sidenav.className.concat(' active')
+            //     sidenav.style.width = "100vw"
+            // }
         }}>
             <div className='bar-1'/>
             <div className='bar-2'/>

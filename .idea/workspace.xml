@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/SideNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/style.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/Hamburger/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/Hamburger/Hamburger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Start/InfoPanel/InfoPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/SideNav/SideNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/SideNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/SideNav/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/SideNav/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +91,7 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="6634000" />
+      <workItem from="1572459997002" duration="7801000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
       <created>1572460326978</created>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572465398506</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created a sidenav, added in function for hamburger to set sidenav as active or inactive">
+      <created>1572466676109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572466676109</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
     <MESSAGE value="Updated navbar responsive width" />
     <MESSAGE value="Added in Hamburger icon" />
     <MESSAGE value="fixed margins for the hamburger" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed margins for the hamburger" />
+    <MESSAGE value="Created a sidenav, added in function for hamburger to set sidenav as active or inactive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a sidenav, added in function for hamburger to set sidenav as active or inactive" />
   </component>
 </project>

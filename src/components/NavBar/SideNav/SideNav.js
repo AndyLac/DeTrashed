@@ -7,13 +7,13 @@ const SideNav = () => {
 
     return (
         <div className='sidenav-container'>
+            <div className='close-btn-container'>
+                <div className='close-btn'>
+                    <span className='close'>X</span>
+                </div>
+            </div>
             <div className='container'>
-                <ul className='close-btn-container'>
-                    <li className='close-btn'>
-                        X
-                    </li>
-                </ul>
-                <ul className='mobile-nav-item-container container'>
+                <ul className='mobile-nav-item-container'>
                     {Object.entries(fields.options).map(entry => (
                         <li
                             className='mobile-nav-item'
