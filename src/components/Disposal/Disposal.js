@@ -109,6 +109,7 @@ class Disposal extends React.Component {
                    />
                     <ul className="location-container">
                         <GeolocationContainer
+                            disposal={this.state.disposal}
                             getGeolocation={this.getGeolocation}
                         />
                     </ul>

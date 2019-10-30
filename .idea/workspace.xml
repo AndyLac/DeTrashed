@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ErrorLabel/ErrorLabel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ErrorLabel/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Disposal/Disposal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/Disposal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/GeolocationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/GeolocationContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -61,6 +65,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Repositories\DeTrashed\src\components" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -87,7 +96,7 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="10170000" />
+      <workItem from="1572459997002" duration="11365000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
       <created>1572460326978</created>
@@ -159,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572471369228</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed Use Geolocation button width">
+      <created>1572471500256</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572471500256</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +205,7 @@
     <MESSAGE value="Updated SideNav design" />
     <MESSAGE value="Added in SideNav to mobile view" />
     <MESSAGE value="Fixed Mural so that it scales with different mobile screens and fixed cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Mural so that it scales with different mobile screens and fixed cards" />
+    <MESSAGE value="Changed Use Geolocation button width" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Use Geolocation button width" />
   </component>
 </project>
