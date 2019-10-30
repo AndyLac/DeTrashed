@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a70ea2-23f1-40fb-9a43-9b025c1ac883" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Card/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/Card/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Community/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Community/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mural/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mural/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Disposal/GeolocationContainer/style.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +87,7 @@
       <workItem from="1572459115268" duration="23000" />
       <workItem from="1572459150705" duration="130000" />
       <workItem from="1572459297450" duration="689000" />
-      <workItem from="1572459997002" duration="10048000" />
+      <workItem from="1572459997002" duration="10170000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing up files while working on a Windows env">
       <created>1572460326978</created>
@@ -158,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572468214200</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed Mural so that it scales with different mobile screens and fixed cards">
+      <created>1572471369228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572471369228</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +188,7 @@
     <MESSAGE value="Created a sidenav, added in function for hamburger to set sidenav as active or inactive" />
     <MESSAGE value="Updated SideNav design" />
     <MESSAGE value="Added in SideNav to mobile view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in SideNav to mobile view" />
+    <MESSAGE value="Fixed Mural so that it scales with different mobile screens and fixed cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Mural so that it scales with different mobile screens and fixed cards" />
   </component>
 </project>
