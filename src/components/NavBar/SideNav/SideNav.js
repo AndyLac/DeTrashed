@@ -1,6 +1,9 @@
 
 import React from 'react'
 import fields from '../fields'
+
+import { toggleSideNav } from "../helpers";
+
 import './style.sass'
 
 const SideNav = () => {
@@ -9,7 +12,9 @@ const SideNav = () => {
         <div className='sidenav-container'>
             <div className='close-btn-container'>
                 <div className='close-btn'>
-                    <span className='close'>X</span>
+                    <span className='close' onClick={e => {
+                        toggleSideNav()
+                    }}>X</span>
                 </div>
             </div>
             <div className='container'>
