@@ -9,14 +9,14 @@ const GeolocationContainer = ({getGeolocation}) => {
     return (
         <ul className='geolocation-container container'>
             <li className='geolocation-subheader'>
-                <h4>Use your geolocation by clicking the button below</h4>
+                <h4>2. Use your geolocation by clicking the button below</h4>
             </li>
             <li className='geolocation-content'>
                 <ul className="label-content" onClick={e => {
                     getGeolocation()
                 }}>
                     <label className="geolocation-label">
-                        <h5>Get Geolocation</h5>
+                        <h5>Use Geolocation</h5>
                     </label>
                 </ul>
             </li>

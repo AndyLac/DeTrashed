@@ -12,10 +12,12 @@ const Start = () => {
     return (
         <section className="start-container" id='start'>
             <ul className="section-header">
-                <SectionHeader
-                    title={"How to Start"}
-                    color={"white"}
-                />
+                <li>
+                    <SectionHeader
+                        title={"How to Start"}
+                        color={"white"}
+                    />
+                </li>
             </ul>
             <ul className="container">
                 {Object.keys(fields).map(key => {

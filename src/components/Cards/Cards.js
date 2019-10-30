@@ -16,10 +16,7 @@ const Cards = ({entries}) => {
 
                     let post = entries[key]
 
-                    if(!isImage(post.data.url)) {
-                        return
-                    } else {
-
+                    if(isImage(post.data.url)) {
                         //Retrieve necessary info from entries
                         const img = post.data.url
                         const user = post.data.author
@@ -36,6 +33,8 @@ const Cards = ({entries}) => {
                                 link={link}
                             />
                         )
+                    } else {
+                        return null
                     }
                 })}
             </section>

@@ -3,7 +3,6 @@
 
 .start-container
   background-color: $theme
-  max-height: 600px
   height: 100%
   padding: 10px 0
 
@@ -19,3 +18,10 @@
     align-items: center
 
     padding: 20px 0
+
+
+@media only screen and (max-width: 720px)
+  .start-container
+    & > .container
+      display: flex
+      flex-flow: column nowrap

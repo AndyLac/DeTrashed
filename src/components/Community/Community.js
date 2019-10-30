@@ -40,10 +40,12 @@ class Community extends React.Component {
             <div className="community-container" id='community'>
                 <section className="container">
                     <ul className="community-text">
-                        <SectionHeader
-                            title={"Community"}
-                            color={"black"}
-                        />
+                        <li>
+                            <SectionHeader
+                                title={"Community"}
+                                color={"black"}
+                            />
+                        </li>
                         <li className="community-msg">
                             <h3>Come see everyone's work!</h3>
                             <h5>Courtesy of <a href="https://www.reddit.com/r/detrashed">Reddit's Detrashed Community</a></h5>

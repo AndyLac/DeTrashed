@@ -5,11 +5,8 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import getGeolocationPromise from './helper'
 
 import GoogleMapProvider from "../GoogleMaps/GoogleMapProvider";
-import AddressContainer from "./AddressContainer/AddressContainer";
 import GeolocationContainer from "./GeolocationContainer/GeolocationContainer";
 import DisposalGroup from "./DisposalGroup/DisposalGroup";
-
-import fields from './DisposalGroup/fields'
 
 import './style.sass'
 
@@ -97,10 +94,12 @@ class Disposal extends React.Component {
             <div className="disposal-container" id='disposal'>
                 <section className="container">
                     <ul>
-                        <SectionHeader
-                            title={"Disposal Center"}
-                            color={"black"}
-                        />
+                        <li>
+                            <SectionHeader
+                                title={"Disposal Center"}
+                                color={"black"}
+                            />
+                        </li>
                         <li>
                             <h4>Find a disposal center near you!</h4>
                         </li>
@@ -108,16 +107,7 @@ class Disposal extends React.Component {
                    <DisposalGroup
                         setDisposal={this.setDisposal}
                    />
-                    <div>
-                        <h4>2. Use one of the two options below</h4>
-                    </div>
                     <ul className="location-container">
-
-                        <AddressContainer
-                            address={this.state.address}
-                            setAddress={this.setAddress}
-                            findDisposalByAddress={this.findDisposalByAddress}
-                        />
                         <GeolocationContainer
                             getGeolocation={this.getGeolocation}
                         />

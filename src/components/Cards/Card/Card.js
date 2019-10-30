@@ -9,7 +9,7 @@ const Card = ({img, user, caption, link}) => {
         <div className="card">
             <ul className="card-container">
                 <li className="img-container">
-                    <img src={img} />
+                    <img src={img} alt={caption}/>
                 </li>
                 <li className="img-info-container">
                     <ul>
