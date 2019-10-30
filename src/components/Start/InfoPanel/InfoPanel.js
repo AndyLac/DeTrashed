@@ -11,7 +11,7 @@ const InfoPanel = ({description, img}) => {
                 <img src={img} alt={description}/>
             </li>
             <li className="info-description">
-                <h4>{description}</h4>
+                <h3>{description}</h3>
             </li>
         </ul>
     </li>
